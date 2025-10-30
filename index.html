@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tyylit.css">
+    <script type = "text/javascript" src="scriptit.js"></script>
+    <script type="text/javascript" src="Kello scripti.js"></script>
+    <title>Lääkelaskurit</title>
+</head>
+<body onload="startTime(); nollaa();">
+    <div class="card">
+        <h2 id="kello" style="margin-left: 5%;"></h2>
+    </div>
+
+    <div id="showMenu">
+        <div class="card">
+            <table>
+
+
+<!--Tee vaikka custom dropdown-menu? Vois olla hieno ja toimii :)-->
+                <tr>
+                    <td>
+                        <button class="nappi" onclick="showPainonm();">Annos painon mukaan</button>
+                    </td>
+                    <td>
+                        <button class="nappi">Tiputusaika</button>
+                    </td>
+                    <td>
+                       <button class="nappi">Tiputusnopeus</button> 
+                    </td>
+                    <td>
+                        <button class="nappi" onclick="URL()"></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="showPainonm">
+        <div class="card">
+            <table class="painonm">
+                <tr>
+                    <td><h4>Tarkista lääkkeen annostus mg/kg/vrk. Tarvitset myös potilaan painon ja määrätty määrä lääkettä/vrk.</h4></td>
+                </tr>
+           
+            
+                <tr>
+                    <td><h4>Potilaan paino:</h4></td>
+                    <td><input type="text" id="paino"> <h4> kg.</h4></td>
+                </tr>
+                <tr>
+                    <td><h4>Lääkkeen annostus </h4></td>
+                    <td><input type="text" id="mgperkgpervrk"> <h4> mg/kg/vrk.</h4></td>
+                </tr>
+                <tr>
+                    <td><h4>Antokerrat (valinnainen)</h4></td>
+                    <td><input type="text" id="antokerrat"><h4> x/vrk.</h4></td>
+                </tr>
+            </table>
+        </div>
+        <div class="card">
+            <center><h4>Vuorokaudessa yhteensä </h4><h4 id="vrkTot"></h4></center>
+            <center><h4>Kerta-annos on </h4><h4 id="kertaA"></h4></center>
+        </div>
+        <div class="card">
+            <table>
+                <tr>
+                    <td><button class="nappi" onclick="laskePainonm();"><h3>Laske</h3></button></td>
+                    <td><button class="nappi" onclick="nollaa();"><h3>Menu/nollaa</h3></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div id="showTipnop">
+
+    </div>
+    
+
+    <div id="showTipaika">
+
+    </div>
+
+
+</body>
+</html>

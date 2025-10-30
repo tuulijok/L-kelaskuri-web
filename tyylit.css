@@ -1,0 +1,78 @@
+body {
+    background-size: cover;
+    background-image: url(taustakuva.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    letter-spacing: 1.5px;
+    color:  rgba(16, 16, 16, 0.664);
+    font-family: monospace;
+    margin-top: 0;
+}
+
+#showPainonm {display: none;}
+#showTipnop {display: none;}
+#showTipaika {display: none;}
+#showingMenu {display: block;}
+
+div.card {
+    display: inline-flex;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(219, 219, 219, 0.175);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+div.topleft {
+    float: left;
+    width: 40%;
+    margin: 5%;
+}
+div.topright {
+    float: right;
+    width: 40%;
+    height: 20%;
+    margin: 5%;
+}
+#content {
+    display: grid;
+    /**
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(219, 219, 219, 0.175); **/
+}
+table {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+td {
+    width: 32%;
+    padding: 1%;
+}
+.nappi{
+    float: right;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(219, 219, 219, 0.175);
+    height: 50px;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #535353;
+    font-family: monospace;
+    letter-spacing: 1.5px;
+    color:  rgba(16, 16, 16, 0.664);
+
+}
+input{
+    width: 10%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    background-color: rgba(219, 219, 219, 0.175);
+}
